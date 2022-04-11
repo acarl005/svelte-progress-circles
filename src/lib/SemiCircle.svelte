@@ -15,6 +15,12 @@
   })
 </script>
 
+<div class="container" style={containerStyle}>
+  <div class="window">
+    <div class="circle" style={circleStyle} />
+  </div>
+</div>
+
 <style>
   .container {
     position: absolute;
@@ -41,9 +47,3 @@
     left: 0;
   }
 </style>
-
-<div class="container" style={containerStyle}>
-  <div class="window">
-    <div class="circle" style={circleStyle} />
-  </div>
-</div>

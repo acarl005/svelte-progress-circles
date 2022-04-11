@@ -13,9 +13,29 @@
     height: `${100 - fullness}%`,
     width: `${100 - fullness}%`,
     left: `${fullness / 2}%`,
-    top: `${fullness / 2}%`,
+    top: `${fullness / 2}%`
   })
 </script>
+
+<div class="progress-circle">
+  <div class="left-half">
+    <div class="semi-circle-wrap">
+      <SemiCircle color={fgColor} />
+      <SemiCircle color={bgColor} zIndex={2} rotate={Math.max(0, (progress - 50) / 100)} />
+    </div>
+  </div>
+  <div class="right-half">
+    <div class="semi-circle-wrap">
+      <SemiCircle color={fgColor} zIndex={3} />
+      {#if progress < 50}
+        <SemiCircle color={bgColor} zIndex={4} rotate={progress / 100} />
+      {/if}
+    </div>
+  </div>
+  <div class="center-cover" style={coverStyle}>
+    <span>{centerText}</span>
+  </div>
+</div>
 
 <style>
   .progress-circle {
@@ -56,23 +76,3 @@
     justify-content: center;
   }
 </style>
-
-<div class="progress-circle">
-  <div class="left-half">
-    <div class="semi-circle-wrap">
-      <SemiCircle color={fgColor} />
-      <SemiCircle color={bgColor} zIndex={2} rotate={Math.max(0, (progress - 50) / 100)} />
-    </div>
-  </div>
-  <div class="right-half">
-    <div class="semi-circle-wrap">
-      <SemiCircle color={fgColor} zIndex={3} />
-      {#if progress < 50}
-        <SemiCircle color={bgColor} zIndex={4} rotate={progress / 100} />
-      {/if}
-    </div>
-  </div>
-  <div class="center-cover" style={coverStyle}>
-    <span>{centerText}</span>
-  </div>
-</div>

@@ -2,17 +2,6 @@
   import ProgressCircle from "../lib/ProgressCircle.svelte"
 </script>
 
-<style>
-  .circle-container {
-    width: 200px;
-    height: 200px;
-  }
-  .smaller {
-    width: 50px;
-    height: 50px;
-  }
-</style>
-
 <div class="circle-container">
   <ProgressCircle progress={0} text="" />
 </div>
@@ -40,3 +29,14 @@
 <div class="circle-container">
   <ProgressCircle progress={100} />
 </div>
+
+<style>
+  .circle-container {
+    width: 200px;
+    height: 200px;
+  }
+  .smaller {
+    width: 50px;
+    height: 50px;
+  }
+</style>
