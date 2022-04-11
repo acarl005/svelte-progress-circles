@@ -6,7 +6,7 @@
   export let fullness = 10
 
   import SemiCircle from "./SemiCircle.svelte"
-  import { styleObjToStr } from "./style-format"
+  import { styleObjToStr } from "./_format"
 
   $: centerText = text === undefined ? `${progress}%` : text
   $: coverStyle = styleObjToStr({
