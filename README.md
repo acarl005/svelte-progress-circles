@@ -1,4 +1,4 @@
-# Svelte Progress Circle
+# Svelte Progress Circles
 
 This is a Svelte component for a circular progress bar, i.e. a "progress circle".
 
