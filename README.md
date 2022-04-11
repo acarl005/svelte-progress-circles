@@ -7,7 +7,7 @@ This is a Svelte component for a circular progress bar, i.e. a "progress circle"
 
 ```html
 <script>
-  import ProgressCircle from "svelte-progress-circles"
+  import { ProgressCircle } from "svelte-progress-circles"
 </script>
 
 <div class="circle-container">
