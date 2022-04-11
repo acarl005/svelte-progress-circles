@@ -3,7 +3,7 @@
   export let zIndex = 1
   export let rotate = 0
 
-  import { styleObjToStr } from "./style-format"
+  import { styleObjToStr } from "./_format"
 
   $: circleStyle = styleObjToStr({
     "background-color": color,
