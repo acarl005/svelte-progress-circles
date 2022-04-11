@@ -39,9 +39,11 @@
     width: 200px;
     height: 200px;
     margin: 20px;
+    font-size: 40px;
   }
   .smaller {
     width: 50px;
     height: 50px;
+    font-size: 20px;
   }
 </style>
