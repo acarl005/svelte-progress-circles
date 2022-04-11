@@ -3,13 +3,13 @@
 </script>
 
 <div class="circle-container">
+  <ProgressCircle progress={10} />
+</div>
+<div class="circle-container">
   <ProgressCircle progress={0} text="" />
 </div>
 <div class="circle-container">
-  <ProgressCircle progress={10} text="shit" />
-</div>
-<div class="circle-container">
-  <ProgressCircle progress={25} />
+  <ProgressCircle progress={25} text="1/4" />
 </div>
 <div class="circle-container">
   <ProgressCircle progress={40} fgColor="green" bgColor="black" />
@@ -34,6 +34,7 @@
   .circle-container {
     width: 200px;
     height: 200px;
+    margin: 20px;
   }
   .smaller {
     width: 50px;
